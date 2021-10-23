@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
+            android:name=".LoginModenUiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConstraintLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GridLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TableLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HorizontalLinearLayoutActivity"
+            android:exported="true" />
+        <activity
             android:name=".LinearActivity"
             android:exported="true" />
         <activity
