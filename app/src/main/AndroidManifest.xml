@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstApp">
         <activity
+            android:name=".RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TableHw1Activity"
+            android:exported="true" />
+        <activity
             android:name=".LoginModenUiActivity"
             android:exported="true" />
         <activity
