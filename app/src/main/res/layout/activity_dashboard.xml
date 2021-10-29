@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity"
-    android:orientation="vertical">
+    >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Linear Activity"
         android:textSize="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -67,4 +71,35 @@
         android:padding="10dp"
         android:textSize="24dp"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/video_view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video View"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/audio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio Player"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/web_view_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textSize="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

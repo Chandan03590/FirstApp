@@ -10,7 +10,7 @@ import android.widget.Button;
 public class DashboardActivity extends AppCompatActivity {
 
     Button linearActivity, horizontalLayout, tableLayoutBtn, gridBtn;
-    Button loginUiBtn;
+    Button loginUiBtn, videoViewbtn, audioBtn, webViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,9 @@ public class DashboardActivity extends AppCompatActivity {
         tableLayoutBtn = findViewById(R.id.table_lyt);
         gridBtn = findViewById(R.id.grid_btn);
         loginUiBtn = findViewById(R.id.login_ui_btn);
+        videoViewbtn=findViewById(R.id.video_view_btn);
+        audioBtn=findViewById(R.id.audio_button);
+        webViewBtn=findViewById(R.id.web_view_button);
 
         linearActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,5 +73,33 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
+
+        videoViewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent videoIntent=new Intent(DashboardActivity.this,VideoViewActivity.class);
+                startActivity(videoIntent);
+            }
+        });
+
+        audioBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent audioIntent=new Intent(DashboardActivity.this,AudioActivity.class);
+                startActivity(audioIntent);
+            }
+        });
+
+        webViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent webIntent=new Intent(DashboardActivity.this,WebviewActivity.class);
+                startActivity(webIntent);
+            }
+        });
+
     }
+
+
 }
